@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #242424;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  button {
+    @apply px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition rounded-md;
+  }
+
+  input {
+    @apply px-3 py-2 border border-gray-200 focus:outline-2 rounded-md;
+  }
+
+  textarea {
+    @apply px-3 py-2 border border-gray-200 focus:outline-2 rounded-md;
+  }
+}
